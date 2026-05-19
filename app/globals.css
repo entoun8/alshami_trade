@@ -1,26 +1,97 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand-olive: #3d4a2d;
+  --brand-olive-dark: #2a3320;
+  --brand-olive-light: #5c6e45;
+  --brand-gold: #c9a84c;
+  --brand-gold-light: #e8d08a;
+  --brand-cream: #f5f0e8;
+  --brand-cream-dark: #ede6d6;
+  --brand-text-dark: rgba(30, 20, 10, 0.87);
+  --brand-text-soft: rgba(30, 20, 10, 0.58);
+  --brand-text-light: rgba(255, 255, 255, 0.95);
+  --brand-text-light-soft: rgba(255, 255, 255, 0.7);
+
+  --background: var(--brand-cream);
+  --foreground: var(--brand-text-dark);
+  --card: var(--brand-cream-dark);
+  --card-foreground: var(--brand-text-dark);
+  --popover: var(--brand-cream);
+  --popover-foreground: var(--brand-text-dark);
+  --primary: var(--brand-olive);
+  --primary-foreground: var(--brand-text-light);
+  --secondary: var(--brand-cream-dark);
+  --secondary-foreground: var(--brand-text-dark);
+  --muted: var(--brand-cream-dark);
+  --muted-foreground: var(--brand-text-soft);
+  --accent: var(--brand-gold);
+  --accent-foreground: var(--brand-olive-dark);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: var(--brand-cream-dark);
+  --input: var(--brand-cream-dark);
+  --ring: var(--brand-gold);
+  --radius: 0.625rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+
+  --color-brand-olive: var(--brand-olive);
+  --color-brand-olive-dark: var(--brand-olive-dark);
+  --color-brand-olive-light: var(--brand-olive-light);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-gold-light: var(--brand-gold-light);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-cream-dark: var(--brand-cream-dark);
+  --color-brand-text-dark: var(--brand-text-dark);
+  --color-brand-text-soft: var(--brand-text-soft);
+  --color-brand-text-light: var(--brand-text-light);
+  --color-brand-text-light-soft: var(--brand-text-light-soft);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-brand-cream text-brand-text-dark;
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  }
+  h1,
+  h2 {
+    font-family: var(--font-display), ui-serif, Georgia, serif;
+  }
 }
