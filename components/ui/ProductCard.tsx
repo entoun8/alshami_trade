@@ -28,7 +28,7 @@ export default function ProductCard({ product, className }: ProductCardProps) {
       <div className="px-4 pb-4 pt-3">
         <h3 className="text-sm font-semibold font-display text-brand-olive">{product.name}</h3>
         {product.description && (
-          <p className="mt-1 text-sm text-brand-text-soft line-clamp-2">{product.description}</p>
+          <p className="mt-1 text-sm text-brand-text-soft sm:line-clamp-2">{product.description}</p>
         )}
       </div>
       <div className="h-0.5 bg-brand-gold opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
