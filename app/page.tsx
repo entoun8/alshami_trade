@@ -37,6 +37,7 @@ export default function HomePage() {
             <SectionHeading
               heading={featuredHeading}
               subheading={featuredSubheading}
+              className="mb-10"
             />
           </AnimatedSection>
           <div className="mt-10 grid gap-8 sm:grid-cols-2">

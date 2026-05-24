@@ -3,10 +3,10 @@ import Image from "next/image";
 import { pageMetadata, pageContent } from "@/lib/data";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
-import SectionHeading from "@/components/ui/SectionHeading";
 import FeatureBand from "@/components/ui/FeatureBand";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import Button from "@/components/ui/Button";
+import PageHero from "@/components/ui/PageHero";
+import BrandSection from "@/components/ui/BrandSection";
 
 export const metadata: Metadata = {
   title: pageMetadata.about.title,
@@ -19,82 +19,27 @@ export default function AboutPage() {
 
   return (
     <>
-      <Section className="bg-brand-cream">
-        <Container>
-          <AnimatedSection>
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="font-display text-4xl font-bold text-brand-olive md:text-5xl">
-                {hero.heading}
-              </h1>
-              <p className="mt-5 text-lg leading-relaxed text-brand-text-soft">{hero.body}</p>
-            </div>
-          </AnimatedSection>
-        </Container>
-      </Section>
+      <PageHero heading={hero.heading} body={hero.body} />
 
       <AnimatedSection>
         <FeatureBand heading={companyStory.heading} body={companyStory.body} />
       </AnimatedSection>
 
-      <Section>
-        <Container>
-          <div className="grid gap-16 md:grid-cols-2 md:items-center">
-            <AnimatedSection>
-              <div className="relative h-72 w-full overflow-hidden rounded-2xl md:h-96">
-                <Image
-                  src={alshamiCoffeeSection.image.src}
-                  alt={alshamiCoffeeSection.image.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  loading="eager"
-                />
-              </div>
-            </AnimatedSection>
-            <AnimatedSection>
-              <SectionHeading heading={alshamiCoffeeSection.heading} className="text-left mb-4" />
-              <p className="text-base leading-relaxed text-brand-text-soft">
-                {alshamiCoffeeSection.body}
-              </p>
-              <div className="mt-6">
-                <Button href={alshamiCoffeeSection.cta.href} variant="primary">
-                  {alshamiCoffeeSection.cta.label}
-                </Button>
-              </div>
-            </AnimatedSection>
-          </div>
-        </Container>
-      </Section>
+      <BrandSection
+        heading={alshamiCoffeeSection.heading}
+        body={alshamiCoffeeSection.body}
+        cta={alshamiCoffeeSection.cta}
+        image={alshamiCoffeeSection.image}
+      />
 
-      <Section className="bg-brand-cream-dark">
-        <Container>
-          <div className="grid gap-16 md:grid-cols-2 md:items-center">
-            <AnimatedSection className="md:order-2">
-              <div className="relative h-72 w-full overflow-hidden rounded-2xl md:h-96">
-                <Image
-                  src={alAttarSection.image.src}
-                  alt={alAttarSection.image.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  loading="eager"
-                />
-              </div>
-            </AnimatedSection>
-            <AnimatedSection className="md:order-1">
-              <SectionHeading heading={alAttarSection.heading} className="text-left mb-4" />
-              <p className="text-base leading-relaxed text-brand-text-soft">
-                {alAttarSection.body}
-              </p>
-              <div className="mt-6">
-                <Button href={alAttarSection.cta.href} variant="primary">
-                  {alAttarSection.cta.label}
-                </Button>
-              </div>
-            </AnimatedSection>
-          </div>
-        </Container>
-      </Section>
+      <BrandSection
+        heading={alAttarSection.heading}
+        body={alAttarSection.body}
+        cta={alAttarSection.cta}
+        image={alAttarSection.image}
+        imagePosition="right"
+        className="bg-brand-cream-dark"
+      />
 
       <Section>
         <Container>
@@ -102,7 +47,7 @@ export default function AboutPage() {
             <div className="grid gap-6 sm:grid-cols-2">
               {lifestyleImages.map((img) => (
                 <div
-                  key={img.src}
+                  key={img.id}
                   className="relative h-64 w-full overflow-hidden rounded-2xl md:h-80"
                 >
                   <Image

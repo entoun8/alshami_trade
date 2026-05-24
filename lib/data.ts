@@ -1,24 +1,4 @@
-import type { NavLink, Product, ContactInfo, SocialLink } from "@/types";
-
-interface HeroCta {
-  label: string;
-  href: string;
-  variant: "primary" | "secondary";
-}
-
-interface ImageConfig {
-  src: string;
-  alt: string;
-}
-
-interface BrandHighlight {
-  id: string;
-  name: string;
-  description: string;
-  href: string;
-  ctaLabel: string;
-  image: ImageConfig;
-}
+import type { NavLink, Product, ContactInfo, SocialLink, HeroCta, ImageConfig, BrandHighlight } from "@/types";
 
 export const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
@@ -269,12 +249,11 @@ const socialLinks: SocialLink[] = [
     href: "https://www.instagram.com/alshami_coffee?igsh=MXhlb2psMWh2Z2l1Ng%3D%3D&utm_source=qr",
     label: "Follow us on Instagram",
   },
-
 ];
 
 export const contactInfo: ContactInfo = {
   email: "basharshalhoub077@gmail.com",
-  phone: "+61 439 622 559",
+  phone: "+61439622559",
   social: socialLinks,
 };
 
@@ -363,14 +342,16 @@ export const pageContent = {
     },
     lifestyleImages: [
       {
+        id: "lifestyle-1",
         src: "/images/other_images/about3.png",
         alt: "Syrian heritage lifestyle — coffee and herbs",
       },
       {
+        id: "lifestyle-2",
         src: "/images/other_images/about4.png",
         alt: "Traditional Syrian market — authentic spices and herbs",
       },
-    ],
+    ] as (ImageConfig & { id: string })[],
   },
   alshamiCoffee: {
     hero: {

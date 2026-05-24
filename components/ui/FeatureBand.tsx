@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
 
 interface CtaConfig {
   label: string;
@@ -17,9 +19,9 @@ interface FeatureBandProps {
 
 export default function FeatureBand({ heading, body, cta, image }: FeatureBandProps) {
   return (
-    <section className="bg-brand-olive-dark py-16 md:py-24">
+    <Section className="bg-brand-olive-dark">
       <Container>
-        <div className={`flex flex-col gap-10 ${image ? "md:flex-row md:items-center md:gap-16" : "max-w-2xl mx-auto text-center"}`}>
+        <div className={cn("flex flex-col gap-10", image ? "md:flex-row md:items-center md:gap-16" : "max-w-2xl mx-auto text-center")}>
           <div className={image ? "md:flex-1" : undefined}>
             <h2 className="font-display text-3xl font-bold text-brand-gold md:text-4xl">
               {heading}
@@ -51,6 +53,6 @@ export default function FeatureBand({ heading, body, cta, image }: FeatureBandPr
           )}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

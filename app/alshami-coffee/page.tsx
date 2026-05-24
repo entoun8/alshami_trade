@@ -26,6 +26,7 @@ export default function AlshamiCoffeePage() {
             <SectionHeading
               heading={catalogueHeading}
               subheading={catalogueSubheading}
+              className="mb-10"
             />
           </AnimatedSection>
           <div className="mt-10 grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

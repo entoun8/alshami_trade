@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { CONTAINER_MAX_WIDTH } from "@/lib/constants";
 
 interface ContainerProps {
   children: React.ReactNode;
@@ -7,7 +8,7 @@ interface ContainerProps {
 
 export default function Container({ children, className }: ContainerProps) {
   return (
-    <div className={cn("mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8", className)}>
+    <div style={{ maxWidth: CONTAINER_MAX_WIDTH }} className={cn("mx-auto w-full px-4 sm:px-6 lg:px-8", className)}>
       {children}
     </div>
   );

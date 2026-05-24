@@ -4,6 +4,8 @@ import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import Button from "@/components/ui/Button";
+import PageHero from "@/components/ui/PageHero";
 
 export const metadata: Metadata = {
   title: pageMetadata.contact.title,
@@ -15,18 +17,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <Section className="bg-brand-cream">
-        <Container>
-          <AnimatedSection>
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="font-display text-4xl font-bold text-brand-olive md:text-5xl">
-                {hero.heading}
-              </h1>
-              <p className="mt-5 text-lg leading-relaxed text-brand-text-soft">{hero.body}</p>
-            </div>
-          </AnimatedSection>
-        </Container>
-      </Section>
+      <PageHero heading={hero.heading} body={hero.body} />
 
       <Section>
         <Container>
@@ -54,7 +45,7 @@ export default function ContactPage() {
                     </dt>
                     <dd className="mt-1">
                       <a
-                        href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
+                        href={`tel:${contactInfo.phone}`}
                         className="text-brand-olive hover:text-brand-olive-light font-medium transition-colors"
                       >
                         {contactInfo.phone}
@@ -74,18 +65,20 @@ export default function ContactPage() {
             <SectionHeading
               heading={socialHeading}
               subheading={socialSubheading}
+              className="mb-10"
             />
             <ul className="mt-8 flex flex-wrap justify-center gap-4">
               {contactInfo.social.map((link) => (
                 <li key={link.platform}>
-                  <a
+                  <Button
+                    variant="olive"
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex min-h-[44px] items-center justify-center rounded-full border-2 border-brand-olive px-6 py-3 text-sm font-semibold text-brand-olive transition-colors hover:bg-brand-olive hover:text-brand-text-light capitalize"
+                    className="capitalize"
                   >
                     {link.platform}
-                  </a>
+                  </Button>
                 </li>
               ))}
             </ul>

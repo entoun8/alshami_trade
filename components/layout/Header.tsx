@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { navLinks } from "@/lib/data";
 import { SITE_NAME } from "@/lib/constants";
+import Container from "@/components/layout/Container";
 import MobileNav from "./MobileNav";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-brand-olive shadow-md">
-      <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <Container className="flex items-center justify-between py-4">
         <Link href="/" className="font-display text-xl font-bold text-brand-gold">
           {SITE_NAME}
         </Link>
@@ -24,7 +25,7 @@ export default function Header() {
         </nav>
 
         <MobileNav />
-      </div>
+      </Container>
     </header>
   );
 }

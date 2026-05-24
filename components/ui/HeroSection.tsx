@@ -1,12 +1,8 @@
 import Image from "next/image";
+import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
-
-interface HeroCta {
-  label: string;
-  href: string;
-  variant?: "primary" | "secondary";
-}
+import type { HeroCta } from "@/types";
 
 interface HeroSectionProps {
   heading: string;
@@ -17,7 +13,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ heading, body, ctas, image }: HeroSectionProps) {
   return (
-    <section className="bg-brand-cream py-16 md:py-24">
+    <Section className="bg-brand-cream">
       <Container>
         <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-16">
           <div className="md:flex-1">
@@ -50,6 +46,6 @@ export default function HeroSection({ heading, body, ctas, image }: HeroSectionP
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }
