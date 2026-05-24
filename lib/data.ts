@@ -32,8 +32,7 @@ export const alshamiCoffeeProducts: Product[] = [
   {
     id: "coffee-1",
     name: "Extra Green Cardamom",
-    description:
-      "Bold Arabic coffee packed with extra green cardamom for an intense, aromatic brew.",
+    description: "Arabic coffee with extra green cardamom — bold.",
     image: "/images/product_images/alshami_coffee/extra-green-cardamom.png",
     alt: "Alshami Extra Green Cardamom coffee — 200g",
     brand: "alshami-coffee",
@@ -41,8 +40,7 @@ export const alshamiCoffeeProducts: Product[] = [
   {
     id: "coffee-2",
     name: "Premium Yemeni Plain",
-    description:
-      "Fine Yemeni Arabica beans roasted plain without cardamom — pure, rich coffee flavour.",
+    description: "Yemeni Arabica — plain roast, no cardamom.",
     image: "/images/product_images/alshami_coffee/yemeni-plain-no-cardamom.png",
     alt: "Alshami Premium Yemeni Plain coffee — 200g, no cardamom",
     brand: "alshami-coffee",
@@ -50,8 +48,7 @@ export const alshamiCoffeeProducts: Product[] = [
   {
     id: "coffee-3",
     name: "Medium Green Cardamom",
-    description:
-      "Balanced Arabic coffee with a medium measure of green cardamom — smooth and fragrant.",
+    description: "Arabic coffee with medium green cardamom — smooth.",
     image: "/images/product_images/alshami_coffee/medium-green-cardamom.png",
     alt: "Alshami Medium Green Cardamom coffee — 200g",
     brand: "alshami-coffee",
@@ -59,10 +56,49 @@ export const alshamiCoffeeProducts: Product[] = [
   {
     id: "coffee-4",
     name: "Shamia Blend Extra Cardamom",
-    description:
-      "A signature Shamia blend loaded with extra green cardamom — the Damascus way.",
+    description: "Shamia blend with extra cardamom — Damascus style.",
     image: "/images/product_images/alshami_coffee/shamia-blend-extra-cardamom.png",
     alt: "Alshami Shamia Blend Extra Cardamom coffee — 200g",
+    brand: "alshami-coffee",
+  },
+  {
+    id: "coffee-5",
+    name: "Café Shami Extra Cardamom — Gold",
+    description: "Luxury Turkish coffee — extra cardamom, gold pack.",
+    image: "/images/product_images/alshami_coffee/shami-extra-cardamom-gold.png",
+    alt: "Café Shami Extra Cardamom — Gold pack",
+    brand: "alshami-coffee",
+  },
+  {
+    id: "coffee-6",
+    name: "Café Shami Extra Cardamom — Blue",
+    description: "Luxury Turkish coffee — extra cardamom, blue pack.",
+    image: "/images/product_images/alshami_coffee/shami-extra-cardamom-blue.png",
+    alt: "Café Shami Extra Cardamom — Blue pack",
+    brand: "alshami-coffee",
+  },
+  {
+    id: "coffee-7",
+    name: "Café Shami Mocha",
+    description: "Luxury Turkish mocha coffee — no cardamom.",
+    image: "/images/product_images/alshami_coffee/shami-mocha-no-cardamom.png",
+    alt: "Café Shami Mocha — Turkish mocha coffee",
+    brand: "alshami-coffee",
+  },
+  {
+    id: "coffee-8",
+    name: "Alshami Extra Cardamom Value Pack",
+    description: "Extra cardamom — 200g value pack, 10 servings.",
+    image: "/images/product_images/alshami_coffee/shami-extra-cardamom-value-pack.png",
+    alt: "Alshami Extra Cardamom Value Pack — 200g",
+    brand: "alshami-coffee",
+  },
+  {
+    id: "coffee-9",
+    name: "Café Alshami Extra Cardamom — Black",
+    description: "Luxury Turkish coffee — extra cardamom, black pack.",
+    image: "/images/product_images/alshami_coffee/alshami-extra-cardamom-black.png",
+    alt: "Café Alshami Extra Cardamom — Black pack",
     brand: "alshami-coffee",
   },
 ];
@@ -71,8 +107,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-1",
     name: "Cumin & Lemon",
-    description:
-      "A warming blend of cumin and lemon — naturally caffeine-free and aids digestion.",
+    description: "Cumin & lemon — caffeine-free, aids digestion.",
     image: "/images/product_images/alataar/cumin-lemon.png",
     alt: "Al-Attar Cumin & Lemon herbal tea",
     brand: "al-attar",
@@ -80,8 +115,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-2",
     name: "Chamomile Flowers",
-    description:
-      "Pure chamomile blossoms — gently calming with a mild, floral sweetness.",
+    description: "Pure chamomile — gently calming, floral sweetness.",
     image: "/images/product_images/alataar/chamomile-flowers.png",
     alt: "Al-Attar Chamomile Flowers herbal tea",
     brand: "al-attar",
@@ -89,8 +123,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-3",
     name: "Pomegranate",
-    description:
-      "Rich, fruity pomegranate infusion — antioxidant-packed and naturally sweet-tart.",
+    description: "Pomegranate infusion — antioxidant-rich, sweet-tart.",
     image: "/images/product_images/alataar/pomegranate.png",
     alt: "Al-Attar Pomegranate herbal tea",
     brand: "al-attar",
@@ -98,8 +131,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-4",
     name: "Green Tea Ginger & Cinnamon",
-    description:
-      "Green tea lifted with warming ginger and cinnamon — energising and spiced.",
+    description: "Green tea with ginger & cinnamon — warming.",
     image: "/images/product_images/alataar/green-tea-ginger-cinnamon.png",
     alt: "Al-Attar Green Tea Ginger & Cinnamon",
     brand: "al-attar",
@@ -107,8 +139,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-5",
     name: "Green Tea",
-    description:
-      "Classic pure green tea — light, fresh, and full of natural antioxidants.",
+    description: "Pure green tea — light, fresh, full of antioxidants.",
     image: "/images/product_images/alataar/green-tea.png",
     alt: "Al-Attar Green Tea",
     brand: "al-attar",
@@ -116,8 +147,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-6",
     name: "Hibiscus",
-    description:
-      "Deep ruby hibiscus flowers with a bold, tangy flavour — rich in antioxidants.",
+    description: "Hibiscus flowers — bold, tangy, antioxidant-rich.",
     image: "/images/product_images/alataar/hibiscus.png",
     alt: "Al-Attar Hibiscus herbal tea",
     brand: "al-attar",
@@ -125,8 +155,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-7",
     name: "Green Tea Mint",
-    description:
-      "Crisp green tea paired with cool fresh mint — refreshing any time of day.",
+    description: "Green tea with cool fresh mint — refreshing.",
     image: "/images/product_images/alataar/green-tea-mint.png",
     alt: "Al-Attar Green Tea Mint",
     brand: "al-attar",
@@ -134,8 +163,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-8",
     name: "Zhourat Lebnania",
-    description:
-      "A Lebanese wildflower blend of herbs and spices — earthy, aromatic, and soothing.",
+    description: "Lebanese wildflower herbs — earthy, aromatic, soothing.",
     image: "/images/product_images/alataar/zhourat-lebnania.png",
     alt: "Al-Attar Zhourat Lebnania herbal blend",
     brand: "al-attar",
@@ -143,8 +171,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-9",
     name: "Ginger & Cinnamon",
-    description:
-      "Spicy ginger with sweet cinnamon — a warming, comforting infusion.",
+    description: "Spicy ginger with sweet cinnamon — warming.",
     image: "/images/product_images/alataar/ginger-cinnamon.png",
     alt: "Al-Attar Ginger & Cinnamon herbal tea",
     brand: "al-attar",
@@ -152,8 +179,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-10",
     name: "Ginger & Honey",
-    description:
-      "Fiery ginger softened with natural honey — soothing for the throat.",
+    description: "Ginger with natural honey — soothing for the throat.",
     image: "/images/product_images/alataar/ginger-honey.png",
     alt: "Al-Attar Ginger & Honey herbal tea",
     brand: "al-attar",
@@ -161,8 +187,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-11",
     name: "Zhourat Shamia",
-    description:
-      "A Syrian wildflower medley of Levantine herbs — fragrant, floral, and timeless.",
+    description: "Syrian wildflower herbs — fragrant, floral, timeless.",
     image: "/images/product_images/alataar/zhourat-shamia.png",
     alt: "Al-Attar Zhourat Shamia herbal blend",
     brand: "al-attar",
@@ -170,8 +195,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-12",
     name: "Ginger & Lemon",
-    description:
-      "Zesty lemon with bold ginger — bright, invigorating, and naturally caffeine-free.",
+    description: "Zesty lemon & bold ginger — bright, caffeine-free.",
     image: "/images/product_images/alataar/ginger-lemon.png",
     alt: "Al-Attar Ginger & Lemon herbal tea",
     brand: "al-attar",
@@ -179,8 +203,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-13",
     name: "Wild Thyme",
-    description:
-      "Sun-dried wild thyme with an earthy, herbal depth — a Levantine staple.",
+    description: "Wild thyme — earthy herbal depth, Levantine staple.",
     image: "/images/product_images/alataar/wild-thyme.png",
     alt: "Al-Attar Wild Thyme herbal tea",
     brand: "al-attar",
@@ -188,8 +211,7 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-14",
     name: "Aniseed",
-    description:
-      "Fragrant aniseed with a gentle liquorice warmth — traditionally aids digestion.",
+    description: "Fragrant aniseed — liquorice warmth, aids digestion.",
     image: "/images/product_images/alataar/aniseed.png",
     alt: "Al-Attar Aniseed herbal tea",
     brand: "al-attar",
@@ -197,10 +219,41 @@ export const alAttarProducts: Product[] = [
   {
     id: "alattar-15",
     name: "Noomi Basra",
-    description:
-      "Dried black Basra lime tea — tangy, smoky, and distinctly Middle Eastern.",
+    description: "Black Basra lime tea — tangy, smoky, Middle Eastern.",
     image: "/images/product_images/alataar/noomi-basra.png",
     alt: "Al-Attar Noomi Basra dried lime tea",
+    brand: "al-attar",
+  },
+  {
+    id: "alattar-16",
+    name: "Lemon Verbena",
+    description: "100% natural lemon verbena — triple-strength bags.",
+    image: "/images/product_images/alataar/lemon-verbena.png",
+    alt: "Al-Attar Lemon Verbena herbal tea",
+    brand: "al-attar",
+  },
+  {
+    id: "alattar-17",
+    name: "Green Tea Variety Pack",
+    description: "6 green tea flavours in one box — 100% natural.",
+    image: "/images/product_images/alataar/green-tea-variety-pack.png",
+    alt: "Al-Attar Green Tea Variety Pack",
+    brand: "al-attar",
+  },
+  {
+    id: "alattar-18",
+    name: "Ginger Variety Pack",
+    description: "6 ginger flavours in one box — 100% natural.",
+    image: "/images/product_images/alataar/ginger-variety-pack.png",
+    alt: "Al-Attar Ginger Variety Pack",
+    brand: "al-attar",
+  },
+  {
+    id: "alattar-19",
+    name: "Natural Herbs Variety Pack",
+    description: "6 natural herb varieties in one box — 100% natural.",
+    image: "/images/product_images/alataar/natural-herbs-variety-pack.png",
+    alt: "Al-Attar Natural Herbs Variety Pack",
     brand: "al-attar",
   },
 ];

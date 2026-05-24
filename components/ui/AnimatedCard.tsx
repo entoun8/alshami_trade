@@ -13,8 +13,8 @@ export default function AnimatedCard({ children, className, index = 0 }: Animate
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.08 }}
+      viewport={{ once: true, margin: "60px" }}
+      transition={{ duration: 0.5, ease: "easeOut", delay: (index % 4) * 0.06 }}
       className={className}
     >
       {children}
