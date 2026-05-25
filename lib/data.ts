@@ -1,4 +1,4 @@
-import type { NavLink, Product, ContactInfo, SocialLink, HeroCta, ImageConfig, BrandHighlight } from "@/types";
+import type { NavLink, Product, ContactInfo, PhoneContact, SocialLink, HeroCta, ImageConfig, BrandHighlight } from "@/types";
 
 export const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
@@ -11,7 +11,7 @@ export const navLinks: NavLink[] = [
 export const alshamiCoffeeProducts: Product[] = [
   {
     id: "coffee-1",
-    name: "Extra Green Cardamom",
+    name: "Extra Green Cardamom 450g",
     description: "Arabic coffee with extra green cardamom — bold.",
     image: "/images/product_images/alshami_coffee/extra-green-cardamom.png",
     alt: "Alshami Extra Green Cardamom coffee — 200g",
@@ -19,7 +19,7 @@ export const alshamiCoffeeProducts: Product[] = [
   },
   {
     id: "coffee-2",
-    name: "Premium Yemeni Plain",
+    name: "Premium Yemeni Plain 450g",
     description: "Yemeni Arabica — plain roast, no cardamom.",
     image: "/images/product_images/alshami_coffee/yemeni-plain-no-cardamom.png",
     alt: "Alshami Premium Yemeni Plain coffee — 200g, no cardamom",
@@ -27,7 +27,7 @@ export const alshamiCoffeeProducts: Product[] = [
   },
   {
     id: "coffee-3",
-    name: "Medium Green Cardamom",
+    name: "Medium Green Cardamom 450g",
     description: "Arabic coffee with medium green cardamom — smooth.",
     image: "/images/product_images/alshami_coffee/medium-green-cardamom.png",
     alt: "Alshami Medium Green Cardamom coffee — 200g",
@@ -35,7 +35,7 @@ export const alshamiCoffeeProducts: Product[] = [
   },
   {
     id: "coffee-4",
-    name: "Shamia Blend Extra Cardamom",
+    name: "Shamia Blend Extra Cardamom 450g",
     description: "Shamia blend with extra cardamom — Damascus style.",
     image: "/images/product_images/alshami_coffee/shamia-blend-extra-cardamom.png",
     alt: "Alshami Shamia Blend Extra Cardamom coffee — 200g",
@@ -43,7 +43,7 @@ export const alshamiCoffeeProducts: Product[] = [
   },
   {
     id: "coffee-5",
-    name: "Café Shami Extra Cardamom — Gold",
+    name: "Café Shami Extra Cardamom — Gold 200g",
     description: "Luxury Turkish coffee — extra cardamom, gold pack.",
     image: "/images/product_images/alshami_coffee/shami-extra-cardamom-gold.png",
     alt: "Café Shami Extra Cardamom — Gold pack",
@@ -51,7 +51,7 @@ export const alshamiCoffeeProducts: Product[] = [
   },
   {
     id: "coffee-6",
-    name: "Café Shami Extra Cardamom — Blue",
+    name: "Café Shami Extra Cardamom — Blue 200g",
     description: "Luxury Turkish coffee — extra cardamom, blue pack.",
     image: "/images/product_images/alshami_coffee/shami-extra-cardamom-blue.png",
     alt: "Café Shami Extra Cardamom — Blue pack",
@@ -59,26 +59,26 @@ export const alshamiCoffeeProducts: Product[] = [
   },
   {
     id: "coffee-7",
-    name: "Café Shami Mocha",
+    name: "Café Shami Mocha 200g",
     description: "Luxury Turkish mocha coffee — no cardamom.",
     image: "/images/product_images/alshami_coffee/shami-mocha-no-cardamom.png",
     alt: "Café Shami Mocha — Turkish mocha coffee",
     brand: "alshami-coffee",
   },
   {
-    id: "coffee-8",
-    name: "Alshami Extra Cardamom Value Pack",
-    description: "Extra cardamom — 200g value pack, 10 servings.",
-    image: "/images/product_images/alshami_coffee/shami-extra-cardamom-value-pack.png",
-    alt: "Alshami Extra Cardamom Value Pack — 200g",
-    brand: "alshami-coffee",
-  },
-  {
     id: "coffee-9",
-    name: "Café Alshami Extra Cardamom — Black",
+    name: "Café Alshami Extra Cardamom — Black 200g",
     description: "Luxury Turkish coffee — extra cardamom, black pack.",
     image: "/images/product_images/alshami_coffee/alshami-extra-cardamom-black.png",
     alt: "Café Alshami Extra Cardamom — Black pack",
+    brand: "alshami-coffee",
+  },
+  {
+    id: "coffee-8",
+    name: "Alshami Extra Cardamom Value Pack — 10 × 20g",
+    description: "Pack of 10 individual sachets, each makes one full pot of Arabic coffee",
+    image: "/images/product_images/alshami_coffee/shami-extra-cardamom-value-pack.png",
+    alt: "Alshami Extra Cardamom Value Pack — 200g",
     brand: "alshami-coffee",
   },
 ];
@@ -251,9 +251,14 @@ const socialLinks: SocialLink[] = [
   },
 ];
 
+const phoneContacts: PhoneContact[] = [
+  { city: "Melbourne", role: "Local agent", number: "+61 439 622 559" },
+  { city: "Sydney", role: "Local agent", number: "+61 450 517 084" },
+];
+
 export const contactInfo: ContactInfo = {
   email: "basharshalhoub077@gmail.com",
-  phone: "+61439622559",
+  phones: phoneContacts,
   social: socialLinks,
 };
 

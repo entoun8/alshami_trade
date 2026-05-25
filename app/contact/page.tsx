@@ -39,19 +39,21 @@ export default function ContactPage() {
                       </a>
                     </dd>
                   </div>
-                  <div>
-                    <dt className="text-sm font-semibold uppercase tracking-wider text-brand-text-soft">
-                      Phone
-                    </dt>
-                    <dd className="mt-1">
-                      <a
-                        href={`tel:${contactInfo.phone}`}
-                        className="text-brand-olive hover:text-brand-olive-light font-medium transition-colors"
-                      >
-                        {contactInfo.phone}
-                      </a>
-                    </dd>
-                  </div>
+                  {contactInfo.phones.map((phone) => (
+                    <div key={phone.city}>
+                      <dt className="text-sm font-semibold uppercase tracking-wider text-brand-text-soft">
+                        {phone.city} — {phone.role}
+                      </dt>
+                      <dd className="mt-1">
+                        <a
+                          href={`tel:${phone.number.replace(/\s/g, "")}`}
+                          className="text-brand-olive hover:text-brand-olive-light font-medium transition-colors"
+                        >
+                          {phone.number}
+                        </a>
+                      </dd>
+                    </div>
+                  ))}
                 </dl>
               </address>
             </AnimatedSection>

@@ -38,8 +38,14 @@ export interface SocialLink {
   label: string;
 }
 
+export interface PhoneContact {
+  city: string;
+  role: string;
+  number: string;
+}
+
 export interface ContactInfo {
   email: string;
-  phone: string;
+  phones: PhoneContact[];
   social: SocialLink[];
 }
