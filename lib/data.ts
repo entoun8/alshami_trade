@@ -254,6 +254,8 @@ const socialLinks: SocialLink[] = [
 const phoneContacts: PhoneContact[] = [
   { city: "Melbourne", role: "Local agent", number: "+61 439 622 559" },
   { city: "Sydney", role: "Local agent", number: "+61 450 517 084" },
+  { city: "Adelaide", role: "Local agent", number: "+61 401 019 905" },
+  { city: "Canberra", role: "Local agent", number: "+61 432 536 266" },
 ];
 
 export const contactInfo: ContactInfo = {
